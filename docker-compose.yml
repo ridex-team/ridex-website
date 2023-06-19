@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: ridex-website
+    build: .
+    container_name: ridex-website
+    restart: always
+    ports:
+      - "9090:80"
